@@ -1,1 +1,15 @@
 
+:root { font-family: system-ui, Arial, sans-serif; }
+body, html { margin: 0; height: 100%; }
+.gate {
+  position: fixed; inset: 0; display: grid; place-items: center;
+  background: rgba(0,0,0,.75);
+}
+.card {
+  background: white; padding: 1.25rem 1.5rem; border-radius: 16px;
+  max-width: 360px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+button {
+  padding: .7rem 1.1rem; border: 0; border-radius: 12px; cursor: pointer;
+}
+.hidden { display: none !important; }
