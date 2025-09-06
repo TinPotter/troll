@@ -1,15 +1,35 @@
+:root {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-:root { font-family: system-ui, Arial, sans-serif; }
-body, html { margin: 0; height: 100%; }
-.gate {
-  position: fixed; inset: 0; display: grid; place-items: center;
-  background: rgba(0,0,0,.75);
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
-.card {
-  background: white; padding: 1.25rem 1.5rem; border-radius: 16px;
-  max-width: 360px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,.2);
+
+#startButton {
+  all: unset; /* remove default button styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  animation: flash 0.2s infinite;
 }
-button {
-  padding: .7rem 1.1rem; border: 0; border-radius: 12px; cursor: pointer;
+
+@keyframes flash {
+  0%   { background: red; }
+  20%  { background: yellow; color: black; }
+  40%  { background: lime; color: black; }
+  60%  { background: blue; }
+  80%  { background: magenta; }
+  100% { background: red; }
 }
-.hidden { display: none !important; }
